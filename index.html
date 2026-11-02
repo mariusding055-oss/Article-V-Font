@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Teenage Engineering’s latest audio gadget looks like an alternate-universe iPod</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1 class="vf-hover">TEENAGE ENGINEERING’S LATEST AUDIO GADGET LOOKS LIKE AN ALTERNATE-UNIVERSE IPOD</h1>
+
+  <figure class="image-section"><img src="1.jpg" alt="Image 1"></figure>
+
+  <section id="section-1">
+    <p>In hindsight, it does seem natural that Teenage Engineering would launch a handheld Field Recorder just a week after debuting their <a href="https://www.yankodesign.com/2023/04/27/teenage-engineerings-cm-15-condenser-microphone-looks-right-out-of-apple-x-brauns-design-playbook/">CM-15 condenser microphone</a>. Designed to be a part of their broad range of audio recording, production, and mixing tools, the <span class="vf-hover">TP-7</span> is an incredibly minimalist field recorder that looks like a spiritual successor to Apple and Braun’s design language. Built on the modern dictaphone, a handheld recorder used by journalists to record interviews, the <span class="vf-hover">TP-7</span> comes with three incredibly large buttons that are reminiscent of the Walkman days. Above the buttons is a spinning disc that turns during recording and playback, imitating the way tape recorders and CD players used to turn while in use. A perfect bit of future nostalgia, this one…</p>
+  </section>
+
+  <figure class="image-section"><img src="2.jpg" alt="Image 2"></figure>
+
+  <figure class="image-section"><img src="3.jpg" alt="Image 3"></figure>
+
+  <section id="section-2">
+    <p>Styled like a hi-fi audio player, the <span class="vf-hover">TP-7</span> is, in fact, a tiny recorder that can record and playback audio, making it great for podcasts, sample recording, music production, vlogging, and journalism. Its design is a combination of nostalgic, with clicky buttons, vintage details, and a palpable lack of touchscreens, and simultaneously cutting-edge, given its ability to record as a standalone device as well as support three separate inputs using aux-ins on the top. Moreover, the <span class="vf-hover">TP-7</span> comes with an iOS app that can automatically transcribe all your recordings, saving you the hassle if you’re a journalist or a vlogger/video-podcaster looking to provide subtitles along with your media.</p>
+  </section>
+
+  <figure class="image-section"><img src="4.jpg" alt="Image 4"></figure>
+
+  <section id="section-3">
+    <p>The <span class="vf-hover">TP-7</span> is designed to fit snugly in your hand, allowing your fingers to effortlessly navigate the controls. Aside from your main buttons on the front, the device also has a rocker switch on the side that lets you fast-forward or rewind recordings. Your thumb is responsible for recording memos, and the pinky selects the mode. At the center of the <span class="vf-hover">TP-7</span> lies the motorized tape reel, which rotates meditatively as you’re recording or during playback. This reel is a finely crafted piece of engineering, featuring a brushed motor with ball bearings and a highly responsive hall sensor that allows for a lifelike recording experience. Additionally, the reel can be used for scrubbing, pausing, menu navigation, and acts as a subtle visual indicator during playback and recording.</p>
+  </section>
+
+  <figure class="image-section"><img src="5.jpg" alt="Image 5"></figure>
+
+  <section id="section-4">
+    <p>The <span class="vf-hover">TP-7</span> features a built-in microphone and speaker, connected to a 24-bit/96 kHz USB audio interface. The top of the gadget sports three audio inputs, letting you hook three microphones, music instruments, or other devices that let you output sound. 128 gigabytes of internal memory keep audio recordings on your <span class="vf-hover">TP-7</span>, or you can use the main audio output on the bottom (a 1/4″ jack with a 3.5mm adapter) to output your sound to a mixer or to headphones. An iOS app lets you access the <span class="vf-hover">TP-7</span>’s recordings too, and transcribe them in real-time, although there’s no clarity if it supports multi-lingual transcription. Finally, a 7-hour battery keeps the <span class="vf-hover">TP-7</span> going even through the longest of recording sessions, and a USB-C port lets you charge your device or even transfer data.</p>
+  </section>
+
+  <figure class="image-section"><img src="6.jpg" alt="Image 6"></figure>
+
+  <section id="section-5">
+    <p>The <span class="vf-hover">TP-7</span> joins all of Teenage Engineering’s other audio recording gear, which also includes the OP-1 field synth, the <a href="https://www.yankodesign.com/2022/04/21/the-teenage-engineering-tx-6-is-a-powerful-handheld-mixer-thats-perfect-for-podcast-production/">TX-6 stereo mixer</a>, and the <a href="https://www.yankodesign.com/2023/04/27/teenage-engineerings-cm-15-condenser-microphone-looks-right-out-of-apple-x-brauns-design-playbook/">CM-15 condenser microphone</a>. At $1499, though, the <span class="vf-hover">TP-7</span> field recorder doesn’t really come cheap… but that’s the price you pay for great design and even greater tech.</p>
+  </section>
+
+  <figure class="image-section"><img src="7.jpg" alt="Image 7"></figure>
+</main>
+
+<script>
+  
+  document.querySelectorAll(".vf-hover").forEach(function (el) {
+    var text = el.textContent;
+    el.setAttribute("aria-label", text);
+    el.textContent = "";
+    for (var i = 0; i < text.length; i++) {
+      var c = text[i];
+      if (c === " ") {
+        el.appendChild(document.createTextNode(" "));
+      } else {
+        var s = document.createElement("span");
+        s.className = "ch";
+        s.setAttribute("aria-hidden", "true");
+        s.textContent = c;
+        el.appendChild(s);
+      }
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "ArticleFontVF";
+  src: url("ArticleFontVF.woff") format("woff");
+  font-weight: 0 100;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+html {
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+  background: #ffffff;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #000000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+
+.vf-hover {
+  font-family: "ArticleFontVF", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.vf-hover .ch {
+  font-variation-settings: "wght" 100;
+  transition: font-variation-settings 0.4s ease;
+}
+
+
+.vf-hover .ch:hover {
+  font-variation-settings: "wght" 1;
+}
+
+section {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+
+figure.image-section {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+figure.image-section img {
+  flex: 0 0 50vw;
+  width: 50vw;
+  height: auto;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+}
